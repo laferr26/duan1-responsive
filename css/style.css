@@ -98,8 +98,8 @@ a {
   justify-content: space-between;
   gap: 230px;
 }
-/* ==============================hero right========================= */
-.hero__right {
+/* ==============================hero left========================= */
+.hero__left {
   position: relative;
 }
 .hero__img {
@@ -270,7 +270,7 @@ a {
 }
 .arrow:hover {
   background: #ffb900;
-  color: #fff;
+  color: #ffb900;
   border: 1px solid #fff;
 }
 

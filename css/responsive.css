@@ -1,0 +1,162 @@
+/* pc */
+@media (min-width: 992px) {
+  .mobile__header {
+    display: none;
+  }
+}
+/* tablet & mobile */
+@media (max-width: 991.98px) {
+  /* ẩn nav bar */
+  .navbar {
+    display: none;
+  }
+  .header__bar {
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* 3.căn lại vị trí của menu icon */
+  .menu-header__icon {
+    position: absolute;
+    color: #ffb900;
+    width: 30px;
+    left: 14px;
+    top: 47px;
+  }
+  /* 4.overlay */
+  .menu-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    /* bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* 5. kiểm tra menu checkbox được checked thì hiện overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* 6. code cho menu drawer */
+  .menu-drawer {
+    padding: 60px;
+    position: fixed;
+    background: #ffb900;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+  /* 7. kiểm tra xem nếu checkbox được check thì hiện lại menu */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  /* 8.menu top */
+  .close-menu {
+    width: 30px;
+    color: #fff;
+  }
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar__list--mobile {
+    margin-top: 25px;
+  }
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+  .navbar__link:hover {
+    background: #00ffff37;
+  }
+
+  /* khối hero */
+  .hero__card {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .hero__right {
+    width: 88%;
+    order: 2;
+  }
+  .hero__left {
+    order: 1;
+  }
+  .hero__right {
+    text-align: center;
+  }
+  .hero__action {
+    justify-content: center;
+  }
+  .stu {
+    justify-content: center;
+  }
+  /* course */
+  .course {
+    margin-top: 50px;
+  }
+  .course__top {
+    flex-direction: column;
+  }
+  .courses__heading {
+    text-align: center;
+  }
+  .course__arrow {
+    margin-top: 18px;
+  }
+  .course__list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+  /* data */
+  .data__top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .data__top__desc {
+    text-align: center;
+  }
+  .data__top__desc h3 {
+    margin: 0 auto;
+  }
+  .data__btn {
+    margin: 32px auto 0;
+  }
+  .data__bot {
+    flex-direction: column;
+    text-align: center;
+  }
+  .data__bot__desc {
+    order: 2;
+  }
+  .data__bot__img {
+    order: 1;
+    margin: 0 auto;
+  }
+
+  /* blog list*/
+  .blog__list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+  /* footer */
+  .footer__col__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* tablet */
+@media (min-width: 768px) and(max-width:991.98px) {
+}
+/* mobile */
+@media (max-width: 767.98px) {
+}
